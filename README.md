@@ -1,4 +1,5 @@
 Programação Visual Básica 🖥️
+
 Este repositório contém meus projetos, exercícios, fluxogramas e códigos desenvolvidos durante as aulas da disciplina Programação Visual Básica, do curso técnico em informática no Colégio Técnico Antônio Teixeira Fernandes (Univap).
 
 O conteúdo foi produzido como parte do meu aprendizado na matéria, seguindo as atividades propostas pelo professor, listas de exercícios e desafios práticos.
