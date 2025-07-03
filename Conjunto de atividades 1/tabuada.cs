@@ -7,7 +7,7 @@
 * Atividade Proposta em aula
 * Observação: <colocar se houver>
 * 
-* Exercicio2.cs
+* tabuada.cs
 * ************************************************************/
 
 using System;
@@ -16,9 +16,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista_1bimestre
+namespace atividade
 {
-    class Exercicio2
+    class tabuada
     {
         static void Main(string[] args)
         {
