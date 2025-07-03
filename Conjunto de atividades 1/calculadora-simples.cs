@@ -7,7 +7,7 @@
 * Atividade Proposta em aula
 * Observação: <colocar se houver>
 * 
-* Exercicio10.cs
+* calculadora-simples.cs
 * ************************************************************/
 using System;
 using System.Collections.Generic;
@@ -15,9 +15,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista_1bimestre
+namespace atividade
 {
-    class Exercicio10
+    class CalculadoraSimples
     {
         static void Main(string[] args)
         {
