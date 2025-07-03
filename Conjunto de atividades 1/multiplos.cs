@@ -7,7 +7,7 @@
 * Atividade Proposta em aula
 * Observação: <colocar se houver>
 * 
-* Exercicio8.cs
+* multiplos.cs
 * ************************************************************/
 using System;
 using System.Collections.Generic;
@@ -15,9 +15,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista_1bimestre
+namespace atividade
 {
-    class Exercicio8
+    class Multiplos
     {
         static void Main(string[] args)
         {
