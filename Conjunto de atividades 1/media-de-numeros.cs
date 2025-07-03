@@ -7,7 +7,7 @@
 * Atividade Proposta em aula
 * Observação: <colocar se houver>
 * 
-* Exercicio7.cs
+* media-de-numeros.cs
 * ************************************************************/
 using System;
 using System.Collections.Generic;
@@ -15,9 +15,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista_1bimestre
+namespace atividade
 {
-    class Exercicio7
+    class MediaNumeros
     {
         static void Main(string[] args)
         {
