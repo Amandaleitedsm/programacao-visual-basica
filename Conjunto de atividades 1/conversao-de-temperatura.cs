@@ -7,7 +7,7 @@
 * Atividade Proposta em aula
 * Observação: <colocar se houver>
 * 
-* Exercicio9.cs
+* conversao-de-temperatura.cs
 * ************************************************************/
 using System;
 using System.Collections.Generic;
@@ -15,9 +15,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista_1bimestre
+namespace atividade
 {
-    class Exercicio9
+    class ConversaoDeTemperatura
     {
         static void Main(string[] args)
         {
