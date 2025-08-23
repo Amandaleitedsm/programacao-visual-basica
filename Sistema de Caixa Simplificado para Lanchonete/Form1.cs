@@ -18,11 +18,14 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         }
         float totalPedido = 0;
         int x = 1;
+        string y = "";
+        string Valor = "";
         private void um_Click(object sender, EventArgs e)
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "1";
+                y += "1";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             } else
             {
                 MessageBox.Show("Não há valor de caixa!");
@@ -33,7 +36,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "2";
+                y += "2";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -45,7 +49,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "3";
+                y += "3";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -57,7 +62,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "4";
+                y += "4";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -69,7 +75,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "5";
+                y += "5";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -81,7 +88,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "6";
+                y += "6";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -93,7 +101,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "7";
+                y += "7";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -105,7 +114,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "8";
+                y += "8";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -117,7 +127,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "9";
+                y += "9";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -126,10 +137,11 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         }
 
         private void zero_Click(object sender, EventArgs e)
-        {
+        { 
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += "0";
+                y += "0";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -141,7 +153,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             if (!valorCaixa.Enabled)
             {
-                valorProduto.Text += ",";
+                y += ",";
+                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
             }
             else
             {
@@ -153,7 +166,6 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             valorCaixa.Enabled = false;
             nomeProduto.Enabled = true;
-            nomeProduto.Cursor = Cursors.IBeam;
             confirmaCaixa.Visible = true;
 
         }
@@ -162,10 +174,11 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         {
             float valorTotal = float.Parse(valorCaixa.Text);
             string produto = nomeProduto.Text;
-            float preco = float.Parse(valorProduto.Text);
+            float preco = float.Parse(valorProduto.Text.Replace("R$" , "").Trim());
             totalPedido += preco;
 
             valorProduto.Text = "";
+            y = "";
             nomeProduto.Clear();
             confirmaProduto.Text = String.Format("Produto adicionado à lista. ({0})", x++);
             confirmaProduto.Visible = true;
@@ -181,7 +194,24 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 
         private void finalizar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(totalPedido.ToString());
+            pagoCliente.Enabled = true;
+        }
+
+        private void pago_Click(object sender, EventArgs e)
+        {
+            float troco = totalPedido - float.Parse(pagoCliente.Text);
+            if (float.Parse(pagoCliente.Text) < totalPedido)
+            {
+                MessageBox.Show("ATENÇÃO: Valor pago é insuficiente");
+            }
+            else
+            {
+                string divisao = "------------------------------------------------------------";
+                notaFiscal.AppendText(divisao + Environment.NewLine + "LANCHONETE DELÍCIA" + Environment.NewLine);
+
+                labelNota.Visible = true;
+                notaFiscal.Visible = true;
+            }
         }
     }
 }
