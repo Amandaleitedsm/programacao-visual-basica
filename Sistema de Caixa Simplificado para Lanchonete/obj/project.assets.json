@@ -8,23 +8,24 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aluno\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\leite\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aluno\\source\\repos\\Amandaleitedsm\\programacao-visual-basica\\Sistema de Caixa Simplificado para Lanchonete\\Sistema de Caixa Simplificado para Lanchonete.csproj",
+      "projectUniqueName": "C:\\Users\\leite\\Source\\Repos\\Amandaleitedsm\\programacao-visual-basica\\Sistema de Caixa Simplificado para Lanchonete\\Sistema de Caixa Simplificado para Lanchonete.csproj",
       "projectName": "Sistema de Caixa Simplificado para Lanchonete",
-      "projectPath": "C:\\Users\\aluno\\source\\repos\\Amandaleitedsm\\programacao-visual-basica\\Sistema de Caixa Simplificado para Lanchonete\\Sistema de Caixa Simplificado para Lanchonete.csproj",
-      "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aluno\\source\\repos\\Amandaleitedsm\\programacao-visual-basica\\Sistema de Caixa Simplificado para Lanchonete\\obj\\",
+      "projectPath": "C:\\Users\\leite\\Source\\Repos\\Amandaleitedsm\\programacao-visual-basica\\Sistema de Caixa Simplificado para Lanchonete\\Sistema de Caixa Simplificado para Lanchonete.csproj",
+      "packagesPath": "C:\\Users\\leite\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leite\\Source\\Repos\\Amandaleitedsm\\programacao-visual-basica\\Sistema de Caixa Simplificado para Lanchonete\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leite\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

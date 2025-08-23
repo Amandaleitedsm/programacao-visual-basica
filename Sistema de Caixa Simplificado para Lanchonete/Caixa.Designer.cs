@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 {
-    partial class Form1
+    partial class Caixa
     {
         /// <summary>
         ///  Required designer variable.
@@ -46,7 +46,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.valorCaixa = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pago = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelPago = new System.Windows.Forms.Label();
             this.pagoCliente = new System.Windows.Forms.TextBox();
             this.confirmaProduto = new System.Windows.Forms.Label();
             this.virgula = new System.Windows.Forms.Button();
@@ -328,7 +328,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.Controls.Add(this.pago);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.labelPago);
             this.panel1.Controls.Add(this.pagoCliente);
             this.panel1.Controls.Add(this.confirmaProduto);
             this.panel1.Controls.Add(this.virgula);
@@ -357,6 +357,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             // pago
             // 
             this.pago.BackColor = System.Drawing.Color.YellowGreen;
+            this.pago.Enabled = false;
             this.pago.FlatAppearance.BorderColor = System.Drawing.Color.OliveDrab;
             this.pago.FlatAppearance.BorderSize = 2;
             this.pago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OliveDrab;
@@ -371,17 +372,17 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.pago.UseVisualStyleBackColor = false;
             this.pago.Click += new System.EventHandler(this.pago_Click);
             // 
-            // label4
+            // labelPago
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 471);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 17);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Valor pago pelo cliente:";
+            this.labelPago.AutoSize = true;
+            this.labelPago.BackColor = System.Drawing.Color.Transparent;
+            this.labelPago.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPago.ForeColor = System.Drawing.Color.DimGray;
+            this.labelPago.Location = new System.Drawing.Point(12, 471);
+            this.labelPago.Name = "labelPago";
+            this.labelPago.Size = new System.Drawing.Size(147, 17);
+            this.labelPago.TabIndex = 28;
+            this.labelPago.Text = "Valor pago pelo cliente:";
             // 
             // pagoCliente
             // 
@@ -484,7 +485,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.Enviar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Enviar.Location = new System.Drawing.Point(402, 39);
             this.Enviar.Name = "Enviar";
-            this.Enviar.Size = new System.Drawing.Size(75, 29);
+            this.Enviar.Size = new System.Drawing.Size(88, 29);
             this.Enviar.TabIndex = 25;
             this.Enviar.Text = "Adicionar produto";
             this.Enviar.UseVisualStyleBackColor = false;
@@ -506,10 +507,11 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             // 
             this.notaFiscal.BackColor = System.Drawing.Color.Gainsboro;
             this.notaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.notaFiscal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.notaFiscal.Location = new System.Drawing.Point(566, 89);
             this.notaFiscal.Multiline = true;
             this.notaFiscal.Name = "notaFiscal";
-            this.notaFiscal.Size = new System.Drawing.Size(522, 379);
+            this.notaFiscal.Size = new System.Drawing.Size(441, 394);
             this.notaFiscal.TabIndex = 26;
             this.notaFiscal.Visible = false;
             // 
@@ -575,7 +577,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         private System.Windows.Forms.Button Enviar;
         private System.Windows.Forms.Label confirmaCaixa;
         private System.Windows.Forms.Label confirmaProduto;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelPago;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox pagoCliente;

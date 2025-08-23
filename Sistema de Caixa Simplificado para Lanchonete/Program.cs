@@ -17,7 +17,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Caixa());
         }
     }
 }
