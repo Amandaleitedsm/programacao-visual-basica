@@ -1,0 +1,36 @@
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.exe
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.deps.json
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.runtimeconfig.json
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.runtimeconfig.dev.json
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\ref\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.pdb
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.AssemblyReference.cache
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema_de_Caixa_Simplificado_para_Lanchonete.Form1.resources
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.GenerateResource.cache
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.AssemblyInfoInputs.cache
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.AssemblyInfo.cs
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.CoreCompileInputs.cache
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\ref\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.pdb
+C:\Users\leite\Documents\Sistema de Caixa Simplificado para Lanchonete\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.genruntimeconfig.cache
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.exe
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.deps.json
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.runtimeconfig.json
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.runtimeconfig.dev.json
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\ref\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.pdb
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.AssemblyReference.cache
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema_de_Caixa_Simplificado_para_Lanchonete.Form1.resources
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.GenerateResource.cache
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.AssemblyInfoInputs.cache
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.AssemblyInfo.cs
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.CoreCompileInputs.cache
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\ref\Sistema de Caixa Simplificado para Lanchonete.dll
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.pdb
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.genruntimeconfig.cache
