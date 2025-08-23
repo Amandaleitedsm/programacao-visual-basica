@@ -45,6 +45,9 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.label1 = new System.Windows.Forms.Label();
             this.valorCaixa = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pago = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pagoCliente = new System.Windows.Forms.TextBox();
             this.confirmaProduto = new System.Windows.Forms.Label();
             this.virgula = new System.Windows.Forms.Button();
             this.valorProduto = new System.Windows.Forms.Label();
@@ -53,6 +56,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.nomeProduto = new System.Windows.Forms.TextBox();
             this.Enviar = new System.Windows.Forms.Button();
             this.confirmaCaixa = new System.Windows.Forms.Label();
+            this.notaFiscal = new System.Windows.Forms.TextBox();
+            this.labelNota = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +72,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.um.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.um.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.um.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.um.Location = new System.Drawing.Point(81, 224);
+            this.um.Location = new System.Drawing.Point(85, 224);
             this.um.Name = "um";
             this.um.Size = new System.Drawing.Size(81, 45);
             this.um.TabIndex = 0;
@@ -86,7 +91,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.dois.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dois.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dois.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dois.Location = new System.Drawing.Point(181, 224);
+            this.dois.Location = new System.Drawing.Point(185, 224);
             this.dois.Name = "dois";
             this.dois.Size = new System.Drawing.Size(81, 45);
             this.dois.TabIndex = 1;
@@ -105,7 +110,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.tres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tres.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tres.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tres.Location = new System.Drawing.Point(283, 224);
+            this.tres.Location = new System.Drawing.Point(287, 224);
             this.tres.Name = "tres";
             this.tres.Size = new System.Drawing.Size(81, 45);
             this.tres.TabIndex = 2;
@@ -124,7 +129,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.seis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.seis.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.seis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.seis.Location = new System.Drawing.Point(283, 286);
+            this.seis.Location = new System.Drawing.Point(287, 286);
             this.seis.Name = "seis";
             this.seis.Size = new System.Drawing.Size(81, 45);
             this.seis.TabIndex = 5;
@@ -143,7 +148,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.cinco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cinco.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cinco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cinco.Location = new System.Drawing.Point(181, 286);
+            this.cinco.Location = new System.Drawing.Point(185, 286);
             this.cinco.Name = "cinco";
             this.cinco.Size = new System.Drawing.Size(81, 45);
             this.cinco.TabIndex = 4;
@@ -162,7 +167,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.quatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quatro.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.quatro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.quatro.Location = new System.Drawing.Point(81, 286);
+            this.quatro.Location = new System.Drawing.Point(85, 286);
             this.quatro.Name = "quatro";
             this.quatro.Size = new System.Drawing.Size(81, 45);
             this.quatro.TabIndex = 6;
@@ -181,7 +186,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.sete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sete.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sete.Location = new System.Drawing.Point(81, 349);
+            this.sete.Location = new System.Drawing.Point(85, 349);
             this.sete.Name = "sete";
             this.sete.Size = new System.Drawing.Size(81, 45);
             this.sete.TabIndex = 9;
@@ -200,7 +205,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.nove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nove.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nove.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nove.Location = new System.Drawing.Point(283, 349);
+            this.nove.Location = new System.Drawing.Point(287, 349);
             this.nove.Name = "nove";
             this.nove.Size = new System.Drawing.Size(81, 45);
             this.nove.TabIndex = 8;
@@ -219,7 +224,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.oito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.oito.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.oito.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.oito.Location = new System.Drawing.Point(181, 349);
+            this.oito.Location = new System.Drawing.Point(185, 349);
             this.oito.Name = "oito";
             this.oito.Size = new System.Drawing.Size(81, 45);
             this.oito.TabIndex = 7;
@@ -238,7 +243,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.zero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zero.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.zero.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.zero.Location = new System.Drawing.Point(81, 411);
+            this.zero.Location = new System.Drawing.Point(85, 411);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(81, 45);
             this.zero.TabIndex = 10;
@@ -257,7 +262,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.enter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.enter.Location = new System.Drawing.Point(12, 144);
             this.enter.Name = "enter";
-            this.enter.Size = new System.Drawing.Size(417, 44);
+            this.enter.Size = new System.Drawing.Size(433, 44);
             this.enter.TabIndex = 11;
             this.enter.Text = "Adicionar produto";
             this.enter.UseVisualStyleBackColor = false;
@@ -272,7 +277,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.deletar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.deletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.deletar.Location = new System.Drawing.Point(81, 470);
+            this.deletar.Location = new System.Drawing.Point(85, 549);
             this.deletar.Name = "deletar";
             this.deletar.Size = new System.Drawing.Size(283, 46);
             this.deletar.TabIndex = 12;
@@ -289,7 +294,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.finalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OliveDrab;
             this.finalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finalizar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.finalizar.Location = new System.Drawing.Point(283, 411);
+            this.finalizar.Location = new System.Drawing.Point(287, 411);
             this.finalizar.Name = "finalizar";
             this.finalizar.Size = new System.Drawing.Size(81, 45);
             this.finalizar.TabIndex = 15;
@@ -316,12 +321,15 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.valorCaixa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.valorCaixa.Location = new System.Drawing.Point(32, 39);
             this.valorCaixa.Name = "valorCaixa";
-            this.valorCaixa.Size = new System.Drawing.Size(341, 29);
+            this.valorCaixa.Size = new System.Drawing.Size(364, 29);
             this.valorCaixa.TabIndex = 16;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.pago);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pagoCliente);
             this.panel1.Controls.Add(this.confirmaProduto);
             this.panel1.Controls.Add(this.virgula);
             this.panel1.Controls.Add(this.valorProduto);
@@ -343,8 +351,48 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.panel1.Controls.Add(this.seis);
             this.panel1.Location = new System.Drawing.Point(32, 89);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(445, 529);
+            this.panel1.Size = new System.Drawing.Size(458, 612);
             this.panel1.TabIndex = 18;
+            // 
+            // pago
+            // 
+            this.pago.BackColor = System.Drawing.Color.YellowGreen;
+            this.pago.FlatAppearance.BorderColor = System.Drawing.Color.OliveDrab;
+            this.pago.FlatAppearance.BorderSize = 2;
+            this.pago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OliveDrab;
+            this.pago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OliveDrab;
+            this.pago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pago.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pago.Location = new System.Drawing.Point(370, 491);
+            this.pago.Name = "pago";
+            this.pago.Size = new System.Drawing.Size(75, 29);
+            this.pago.TabIndex = 26;
+            this.pago.Text = "Adicionar produto";
+            this.pago.UseVisualStyleBackColor = false;
+            this.pago.Click += new System.EventHandler(this.pago_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(12, 471);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 17);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Valor pago pelo cliente:";
+            // 
+            // pagoCliente
+            // 
+            this.pagoCliente.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pagoCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pagoCliente.Enabled = false;
+            this.pagoCliente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pagoCliente.Location = new System.Drawing.Point(12, 491);
+            this.pagoCliente.Name = "pagoCliente";
+            this.pagoCliente.Size = new System.Drawing.Size(352, 29);
+            this.pagoCliente.TabIndex = 27;
             // 
             // confirmaProduto
             // 
@@ -368,7 +416,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.virgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.virgula.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.virgula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.virgula.Location = new System.Drawing.Point(181, 411);
+            this.virgula.Location = new System.Drawing.Point(185, 411);
             this.virgula.Name = "virgula";
             this.virgula.Size = new System.Drawing.Size(81, 45);
             this.virgula.TabIndex = 24;
@@ -386,7 +434,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.valorProduto.ForeColor = System.Drawing.Color.Black;
             this.valorProduto.Location = new System.Drawing.Point(12, 100);
             this.valorProduto.Name = "valorProduto";
-            this.valorProduto.Size = new System.Drawing.Size(417, 29);
+            this.valorProduto.Size = new System.Drawing.Size(433, 29);
             this.valorProduto.TabIndex = 23;
             this.valorProduto.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -417,12 +465,12 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             // nomeProduto
             // 
             this.nomeProduto.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.nomeProduto.Cursor = System.Windows.Forms.Cursors.No;
+            this.nomeProduto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nomeProduto.Enabled = false;
             this.nomeProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nomeProduto.Location = new System.Drawing.Point(12, 40);
             this.nomeProduto.Name = "nomeProduto";
-            this.nomeProduto.Size = new System.Drawing.Size(417, 29);
+            this.nomeProduto.Size = new System.Drawing.Size(433, 29);
             this.nomeProduto.TabIndex = 19;
             // 
             // Enviar
@@ -434,9 +482,9 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.Enviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OliveDrab;
             this.Enviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Enviar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Enviar.Location = new System.Drawing.Point(379, 39);
+            this.Enviar.Location = new System.Drawing.Point(402, 39);
             this.Enviar.Name = "Enviar";
-            this.Enviar.Size = new System.Drawing.Size(98, 29);
+            this.Enviar.Size = new System.Drawing.Size(75, 29);
             this.Enviar.TabIndex = 25;
             this.Enviar.Text = "Adicionar produto";
             this.Enviar.UseVisualStyleBackColor = false;
@@ -454,11 +502,37 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.confirmaCaixa.Text = "Dinheiro adicionado ao caixa.";
             this.confirmaCaixa.Visible = false;
             // 
+            // notaFiscal
+            // 
+            this.notaFiscal.BackColor = System.Drawing.Color.Gainsboro;
+            this.notaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.notaFiscal.Location = new System.Drawing.Point(566, 89);
+            this.notaFiscal.Multiline = true;
+            this.notaFiscal.Name = "notaFiscal";
+            this.notaFiscal.Size = new System.Drawing.Size(522, 379);
+            this.notaFiscal.TabIndex = 26;
+            this.notaFiscal.Visible = false;
+            // 
+            // labelNota
+            // 
+            this.labelNota.AutoSize = true;
+            this.labelNota.BackColor = System.Drawing.SystemColors.Control;
+            this.labelNota.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNota.ForeColor = System.Drawing.Color.Black;
+            this.labelNota.Location = new System.Drawing.Point(566, 66);
+            this.labelNota.Name = "labelNota";
+            this.labelNota.Size = new System.Drawing.Size(102, 20);
+            this.labelNota.TabIndex = 27;
+            this.labelNota.Text = "NOTA FISCAL ";
+            this.labelNota.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 630);
+            this.ClientSize = new System.Drawing.Size(1186, 723);
+            this.Controls.Add(this.labelNota);
+            this.Controls.Add(this.notaFiscal);
             this.Controls.Add(this.confirmaCaixa);
             this.Controls.Add(this.Enviar);
             this.Controls.Add(this.panel1);
@@ -501,6 +575,13 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         private System.Windows.Forms.Button Enviar;
         private System.Windows.Forms.Label confirmaCaixa;
         private System.Windows.Forms.Label confirmaProduto;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox pagoCliente;
+        private System.Windows.Forms.Button pago;
+        private System.Windows.Forms.Label labelNota;
+        private System.Windows.Forms.TextBox notaFiscal;
     }
 }
 
