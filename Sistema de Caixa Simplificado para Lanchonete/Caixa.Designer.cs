@@ -509,6 +509,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             // 
             this.notaFiscal.BackColor = System.Drawing.Color.Gainsboro;
             this.notaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.notaFiscal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.notaFiscal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.notaFiscal.Location = new System.Drawing.Point(566, 89);
             this.notaFiscal.Multiline = true;

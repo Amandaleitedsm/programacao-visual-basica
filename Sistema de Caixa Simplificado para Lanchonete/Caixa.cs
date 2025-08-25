@@ -299,20 +299,9 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             string total = String.Format("VALOR DE CAIXA ATUAL: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, tamanho), valorTotalFormat);
 
             valorCaixa.Clear();
-            nomeProduto.Enabled = false;
-            valorProduto.Enabled = false;
-            um.Enabled = false;
-            dois.Enabled = false;
-            tres.Enabled = false;
-            quatro.Enabled = false;
-            cinco.Enabled = false;
-            seis.Enabled = false;
-            sete.Enabled = false;
-            oito.Enabled = false;
-            nove.Enabled = false;
-            zero.Enabled = false;
-            virgula.Enabled = false;
-            deletar.Enabled = false;
+            nomeProduto.Enabled = valorProduto.Enabled = um.Enabled = dois.Enabled = tres.Enabled = false;
+            quatro.Enabled = cinco.Enabled = seis.Enabled = sete.Enabled = oito.Enabled = false;
+            nove.Enabled = zero.Enabled = virgula.Enabled = deletar.Enabled = false;
             
             notaFiscal.ScrollBars = ScrollBars.Vertical;
             notaFiscal.AppendText(FechaCaixa + Environment.NewLine + inicio + total + "VOLTE PARA O TOPO PARA MAIS DETALHES!");
