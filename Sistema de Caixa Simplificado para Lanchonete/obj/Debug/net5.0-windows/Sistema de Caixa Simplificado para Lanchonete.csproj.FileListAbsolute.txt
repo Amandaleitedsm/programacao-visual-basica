@@ -24,7 +24,6 @@ C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de 
 C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\ref\Sistema de Caixa Simplificado para Lanchonete.dll
 C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\bin\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.pdb
 C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.AssemblyReference.cache
-C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema_de_Caixa_Simplificado_para_Lanchonete.Form1.resources
 C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.csproj.GenerateResource.cache
 C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.AssemblyInfoInputs.cache
@@ -52,3 +51,4 @@ C:\Users\aluno\source\repos\Amandaleitedsm\programacao-visual-basica\Sistema de 
 C:\Users\aluno\source\repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\ref\Sistema de Caixa Simplificado para Lanchonete.dll
 C:\Users\aluno\source\repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.pdb
 C:\Users\aluno\source\repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema de Caixa Simplificado para Lanchonete.genruntimeconfig.cache
+C:\Users\leite\Source\Repos\Amandaleitedsm\programacao-visual-basica\Sistema de Caixa Simplificado para Lanchonete\obj\Debug\net5.0-windows\Sistema_de_Caixa_Simplificado_para_Lanchonete.Caixa.resources

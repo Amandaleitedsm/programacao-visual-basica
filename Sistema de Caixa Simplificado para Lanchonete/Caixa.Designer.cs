@@ -58,6 +58,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.confirmaCaixa = new System.Windows.Forms.Label();
             this.notaFiscal = new System.Windows.Forms.TextBox();
             this.labelNota = new System.Windows.Forms.Label();
+            this.fechaCaixa = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -511,7 +513,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.notaFiscal.Location = new System.Drawing.Point(566, 89);
             this.notaFiscal.Multiline = true;
             this.notaFiscal.Name = "notaFiscal";
-            this.notaFiscal.Size = new System.Drawing.Size(441, 394);
+            this.notaFiscal.ReadOnly = true;
+            this.notaFiscal.Size = new System.Drawing.Size(490, 394);
             this.notaFiscal.TabIndex = 26;
             this.notaFiscal.Visible = false;
             // 
@@ -528,11 +531,43 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.labelNota.Text = "NOTA FISCAL ";
             this.labelNota.Visible = false;
             // 
-            // Form1
+            // fechaCaixa
+            // 
+            this.fechaCaixa.BackColor = System.Drawing.Color.Red;
+            this.fechaCaixa.Enabled = false;
+            this.fechaCaixa.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.fechaCaixa.FlatAppearance.BorderSize = 2;
+            this.fechaCaixa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.fechaCaixa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.fechaCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fechaCaixa.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fechaCaixa.Location = new System.Drawing.Point(643, 545);
+            this.fechaCaixa.Name = "fechaCaixa";
+            this.fechaCaixa.Size = new System.Drawing.Size(283, 46);
+            this.fechaCaixa.TabIndex = 29;
+            this.fechaCaixa.Text = "Fechar caixa";
+            this.fechaCaixa.UseVisualStyleBackColor = false;
+            this.fechaCaixa.Click += new System.EventHandler(this.fechaCaixa_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
+            this.label4.Location = new System.Drawing.Point(667, 594);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(238, 34);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Essa ação encerrará as ações do caixa \r\ne mostrará a nota dos pedidos do dia.";
+            // 
+            // Caixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1186, 723);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.fechaCaixa);
             this.Controls.Add(this.labelNota);
             this.Controls.Add(this.notaFiscal);
             this.Controls.Add(this.confirmaCaixa);
@@ -541,7 +576,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.Controls.Add(this.label1);
             this.Controls.Add(this.valorCaixa);
             this.ForeColor = System.Drawing.Color.Transparent;
-            this.Name = "Form1";
+            this.Name = "Caixa";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -584,6 +619,8 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         private System.Windows.Forms.Button pago;
         private System.Windows.Forms.Label labelNota;
         private System.Windows.Forms.TextBox notaFiscal;
+        private System.Windows.Forms.Button fechaCaixa;
+        private System.Windows.Forms.Label label4;
     }
 }
 
