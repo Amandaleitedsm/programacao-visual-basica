@@ -24,7 +24,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
         string divisao = "-----------------------------------------------" + Environment.NewLine;
         string divisaoLista = "...........................................................";
         bool ativo = false;
-        string FechaCaixa = "FLUXO DE CAIXA" + Environment.NewLine ;
+        string FechaCaixa = "";
         private void um_Click(object sender, EventArgs e)
         {
             if (ativo)
@@ -169,32 +169,43 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 
         private void Enviar_Click(object sender, EventArgs e)
         {
-            valorCaixa.Enabled = false;
-            ativo = true;
-            nomeProduto.Enabled = true;
-            confirmaCaixa.Visible = true;
-            Enviar.Enabled = false;
+            if (float.TryParse(valorCaixa.Text, out valorTotal))
+            {
+                valorCaixa.Enabled = false;
+                ativo = true;
+                nomeProduto.Enabled = true;
+                confirmaCaixa.Visible = true;
+                Enviar.Enabled = false;
+            } else
+            {
+                MessageBox.Show("Valor inválido. Digite novamente.");
+            }
+            
         }
 
         private void enter_Click(object sender, EventArgs e)
         {
-            valorTotal = float.Parse(valorCaixa.Text);
-            string produto = nomeProduto.Text;
-            float preco = float.Parse(valorProduto.Text.Replace("R$" , ""));
-            totalPedido += preco;
-            
-            valorProduto.Text = "";
-            y = "";
-            nomeProduto.Clear();
-            confirmaProduto.Text = String.Format("Produto adicionado à lista. ({0})", x++);
-            confirmaProduto.Visible = true;
+            if (float.TryParse(valorProduto.Text.Replace("R$", ""), out float preco))
+            {
+                string produto = nomeProduto.Text;
+                totalPedido += preco;
 
-            string espacos = "          ";
-            string precoFormat = "R$ " + espacos.Substring(0, 7 - preco.ToString("0.00").Length) + preco.ToString("0.00");
-            int tamanho = 40 - produto.Length - precoFormat.Length;
-            produtos += String.Format("- {0} {1} {2}" + Environment.NewLine, produto, divisaoLista.Substring(0, tamanho), precoFormat);
+                valorProduto.Text = "";
+                y = "";
+                nomeProduto.Clear();
+                confirmaProduto.Text = String.Format("Produto adicionado à lista. ({0})", x++);
+                confirmaProduto.Visible = true;
 
-            
+                string espacos = "          ";
+                string precoFormat = "R$ " + espacos.Substring(0, 7 - preco.ToString("0.00").Length) + preco.ToString("0.00");
+                int tamanho = 40 - produto.Length - precoFormat.Length;
+                produtos += String.Format("- {0} {1} {2}" + Environment.NewLine, produto, divisaoLista.Substring(0, tamanho), precoFormat);
+            } else
+            {
+                MessageBox.Show("Valor inválido. Digite novamente.");
+            }
+
+
         }
 
         private void deletar_Click(object sender, EventArgs e)
@@ -230,60 +241,65 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 
         private void pago_Click(object sender, EventArgs e)
         {
-            fechaCaixa.Enabled = true;
-            valorTotal = float.Parse(valorCaixa.Text);
-            float vPago = float.Parse(pagoCliente.Text);
-            float troco = vPago - totalPedido;
-            labelPago.ForeColor = Color.DimGray;
-
-            pagoCliente.Enabled = false;
-            pago.Enabled = false;
-            pagoCliente.Clear();
-            if (vPago < totalPedido)
+            if (float.TryParse(pagoCliente.Text, out float vPago))
             {
-                MessageBox.Show("ATENÇÃO: Valor pago é insuficiente");
-            }
-            else if (troco > valorTotal)
+                fechaCaixa.Enabled = true;
+                float troco = vPago - totalPedido;
+                labelPago.ForeColor = Color.DimGray;
+
+                pagoCliente.Enabled = false;
+                pago.Enabled = false;
+                pagoCliente.Clear();
+                if (vPago < totalPedido)
+                {
+                    MessageBox.Show("ATENÇÃO: Valor pago é insuficiente");
+                }
+                else if (troco > valorTotal)
+                {
+                    MessageBox.Show("ATENÇÃO: Não há troco disponível no caixa. " +
+                        "Informe o cliente e, se necessário, feche o caixa");
+                    pagoCliente.Enabled = true;
+                    pago.Enabled = true;
+                }
+                else
+                {
+                    valorTotal = valorTotal + vPago - troco;
+                    DateTime diaHora = DateTime.Now;
+                    string data = String.Format(Environment.NewLine + "Data: {0}, {1}" + Environment.NewLine,
+                                                diaHora.ToString("dddd"), diaHora.ToString("dd 'de' MMMM 'de' yyyy"));
+                    string hora = String.Format("Hora: {0}" + Environment.NewLine, diaHora.ToString("HH:mm:ss"));
+
+
+                    string espacos = "          ";
+                    string trocoStr = "R$ " + espacos.Substring(0, 7 - troco.ToString("0.00").Length) + troco.ToString("0.00");
+                    string pagoStr = "R$ " + espacos.Substring(0, 7 - vPago.ToString("0.00").Length) + vPago.ToString("0.00");
+                    string strTotal = "R$ " + espacos.Substring(0, 7 - totalPedido.ToString("0.00").Length) + totalPedido.ToString("0.00");
+
+                    int subTamanho = 40 - "SUBTOTAL".Length - strTotal.Length + 1;
+                    int pagoTamanho = 40 - "VALOR PAGO".Length - pagoStr.Length + 1;
+                    int trocoTamanho = 40 - "TROCO".Length - trocoStr.Length + 1;
+
+                    string subtotal = String.Format("SUBTOTAL: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, subTamanho), strTotal);
+                    string valorPago = String.Format("VALOR PAGO: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, pagoTamanho), pagoStr);
+                    string trocoF = String.Format("TROCO: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, trocoTamanho), trocoStr);
+
+                    notaFiscal.AppendText(divisao + "LANCHONETE DELÍCIA" + Environment.NewLine + data + hora
+                                        + divisao + Environment.NewLine + "PRODUTOS" + Environment.NewLine
+                                        + produtos + Environment.NewLine + divisao + subtotal + valorPago + trocoF
+                                        + divisao + Environment.NewLine + "OBRIGADO PELA PREFERÊNCIA!" + Environment.NewLine + divisao);
+
+
+
+                    labelNota.Visible = true;
+                    notaFiscal.ScrollBars = ScrollBars.None;
+                    notaFiscal.Visible = true;
+
+                    FechaCaixa += notaFiscal.Text;
+                }
+
+            } else
             {
-                MessageBox.Show("ATENÇÃO: Não há troco disponível no caixa. " +
-                    "Informe o cliente e, se necessário, feche o caixa");
-                pagoCliente.Enabled = true;
-                pago.Enabled = true;
-            } 
-            else
-            {
-                valorTotal = valorTotal + vPago - troco;
-                DateTime diaHora = DateTime.Now;
-                string data = String.Format(Environment.NewLine + "Data: {0}, {1}" + Environment.NewLine,
-                                            diaHora.ToString("dddd"), diaHora.ToString("dd 'de' MMMM 'de' yyyy"));
-                string hora = String.Format("Hora: {0}" + Environment.NewLine, diaHora.ToString("HH:mm:ss"));
-
-                
-                string espacos = "          ";
-                string trocoStr = "R$ " + espacos.Substring(0, 7 - troco.ToString("0.00").Length) + troco.ToString("0.00");
-                string pagoStr = "R$ " + espacos.Substring(0, 7 - vPago.ToString("0.00").Length) + vPago.ToString("0.00");
-                string strTotal = "R$ " + espacos.Substring(0, 7 - totalPedido.ToString("0.00").Length) + totalPedido.ToString("0.00");
-
-                int subTamanho = 40 - "SUBTOTAL".Length - strTotal.Length + 1;
-                int pagoTamanho = 40 - "VALOR PAGO".Length - pagoStr.Length + 1;
-                int trocoTamanho = 40 - "TROCO".Length - trocoStr.Length + 1;
-
-                string subtotal = String.Format("SUBTOTAL: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, subTamanho), strTotal);
-                string valorPago = String.Format("VALOR PAGO: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, pagoTamanho), pagoStr);
-                string trocoF = String.Format("TROCO: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, trocoTamanho), trocoStr);
-
-                notaFiscal.AppendText(divisao + "LANCHONETE DELÍCIA" + Environment.NewLine + data + hora 
-                                    + divisao + Environment.NewLine + "PRODUTOS" + Environment.NewLine 
-                                    + produtos + Environment.NewLine + divisao + subtotal + valorPago + trocoF 
-                                    + divisao + Environment.NewLine + "OBRIGADO PELA PREFERÊNCIA!" + Environment.NewLine + divisao);
-
-
-
-                labelNota.Visible = true;
-                notaFiscal.ScrollBars = ScrollBars.None;
-                notaFiscal.Visible = true;
-
-                FechaCaixa += notaFiscal.Text;
+                MessageBox.Show("Valor inválido. Digite Novamente.");
             }
         }
 
