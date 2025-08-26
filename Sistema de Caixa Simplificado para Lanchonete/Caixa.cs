@@ -213,6 +213,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             ativo = true;
             totalPedido = 0;
             x = 1;
+            produtos = "";
             confirmaProduto.Visible = false;
             notaFiscal.Clear();
             notaFiscal.Visible = false;
@@ -328,5 +329,6 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
                 "Todas as funcionalidades foram desabilitadas." +
                 "Acompanhe o fluxo de caixa pela nota");
         }
+
     }
 }
