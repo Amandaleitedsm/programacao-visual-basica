@@ -310,7 +310,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(32, 14);
+            this.label1.Location = new System.Drawing.Point(54, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 20);
             this.label1.TabIndex = 17;
@@ -321,7 +321,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.valorCaixa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.valorCaixa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.valorCaixa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.valorCaixa.Location = new System.Drawing.Point(32, 39);
+            this.valorCaixa.Location = new System.Drawing.Point(54, 67);
             this.valorCaixa.Name = "valorCaixa";
             this.valorCaixa.Size = new System.Drawing.Size(364, 29);
             this.valorCaixa.TabIndex = 16;
@@ -351,7 +351,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.panel1.Controls.Add(this.cinco);
             this.panel1.Controls.Add(this.quatro);
             this.panel1.Controls.Add(this.seis);
-            this.panel1.Location = new System.Drawing.Point(32, 89);
+            this.panel1.Location = new System.Drawing.Point(54, 117);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(458, 612);
             this.panel1.TabIndex = 18;
@@ -485,7 +485,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.Enviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OliveDrab;
             this.Enviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Enviar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Enviar.Location = new System.Drawing.Point(402, 39);
+            this.Enviar.Location = new System.Drawing.Point(424, 67);
             this.Enviar.Name = "Enviar";
             this.Enviar.Size = new System.Drawing.Size(88, 29);
             this.Enviar.TabIndex = 25;
@@ -498,7 +498,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.confirmaCaixa.AutoSize = true;
             this.confirmaCaixa.BackColor = System.Drawing.Color.Transparent;
             this.confirmaCaixa.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.confirmaCaixa.Location = new System.Drawing.Point(32, 71);
+            this.confirmaCaixa.Location = new System.Drawing.Point(54, 99);
             this.confirmaCaixa.Name = "confirmaCaixa";
             this.confirmaCaixa.Size = new System.Drawing.Size(163, 15);
             this.confirmaCaixa.TabIndex = 25;
@@ -511,7 +511,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.notaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.notaFiscal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.notaFiscal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.notaFiscal.Location = new System.Drawing.Point(566, 89);
+            this.notaFiscal.Location = new System.Drawing.Point(588, 117);
             this.notaFiscal.Multiline = true;
             this.notaFiscal.Name = "notaFiscal";
             this.notaFiscal.ReadOnly = true;
@@ -525,7 +525,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.labelNota.BackColor = System.Drawing.SystemColors.Control;
             this.labelNota.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelNota.ForeColor = System.Drawing.Color.Black;
-            this.labelNota.Location = new System.Drawing.Point(566, 66);
+            this.labelNota.Location = new System.Drawing.Point(588, 94);
             this.labelNota.Name = "labelNota";
             this.labelNota.Size = new System.Drawing.Size(102, 20);
             this.labelNota.TabIndex = 27;
@@ -542,7 +542,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.fechaCaixa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.fechaCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fechaCaixa.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fechaCaixa.Location = new System.Drawing.Point(643, 545);
+            this.fechaCaixa.Location = new System.Drawing.Point(686, 573);
             this.fechaCaixa.Name = "fechaCaixa";
             this.fechaCaixa.Size = new System.Drawing.Size(283, 46);
             this.fechaCaixa.TabIndex = 29;
@@ -556,7 +556,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(667, 594);
+            this.label4.Location = new System.Drawing.Point(710, 622);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(238, 34);
             this.label4.TabIndex = 29;
@@ -566,7 +566,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 723);
+            this.ClientSize = new System.Drawing.Size(1131, 767);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.fechaCaixa);
             this.Controls.Add(this.labelNota);

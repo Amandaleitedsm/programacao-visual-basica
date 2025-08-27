@@ -1,4 +1,15 @@
-﻿using System;
+﻿/* *******************************************************************
+* Colegio Técnico Antônio Teixeira Fernandes (Univap)
+* Curso Técnico em Informática - Data de Entrega: 27/08/2025
+* Autores do Projeto: Amanda Leite de Souza Machado
+*                     Yure Campos Camilo
+* Turma: 2I
+* Atividade Proposta em aula
+* Observação: <colocar se houver>
+* 
+* Caixa.cs
+* ************************************************************/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -156,20 +167,24 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 
         private void virgula_Click(object sender, EventArgs e)
         {
-            if (ativo)
+            if (!y.Contains(","))
             {
-                y += ",";
-                valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
+                if (ativo)
+                {
+                    y += ",";
+                    valorProduto.Text = String.Format("{0:C2}", float.Parse(y));
+                }
+                else
+                {
+                    MessageBox.Show("Não é possível utilizar essa função no momento. Termine a operação em andamento.");
+                }
             }
-            else
-            {
-                MessageBox.Show("Não é possível utilizar essa função no momento. Termine a operação em andamento.");
-            }
+
         }
 
         private void Enviar_Click(object sender, EventArgs e)
         {
-            if (float.TryParse(valorCaixa.Text, out valorTotal))
+            if (float.TryParse(valorCaixa.Text, out valorTotal) && valorTotal > 0)
             {
                 valorCaixa.Enabled = false;
                 ativo = true;
@@ -185,7 +200,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 
         private void enter_Click(object sender, EventArgs e)
         {
-            if (float.TryParse(valorProduto.Text.Replace("R$", ""), out float preco))
+            if (float.TryParse(valorProduto.Text.Replace("R$", ""), out float preco) && nomeProduto.Text != "")
             {
                 string produto = nomeProduto.Text;
                 totalPedido += preco;
@@ -210,19 +225,23 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
 
         private void deletar_Click(object sender, EventArgs e)
         {
-            ativo = true;
-            totalPedido = 0;
-            x = 1;
-            produtos = "";
-            confirmaProduto.Visible = false;
-            notaFiscal.Clear();
-            notaFiscal.Visible = false;
-            labelNota.Visible = false;
-            nomeProduto.Enabled = true;
-            valorProduto.Enabled = true;
-            enter.Enabled = true;
-            finalizar.Enabled = true;
-            fechaCaixa.Enabled = false;
+            if (valorTotal != 0)
+            {
+                ativo = true;
+                totalPedido = 0;
+                x = 1;
+                produtos = "";
+                confirmaProduto.Visible = false;
+                notaFiscal.Clear();
+                notaFiscal.Visible = false;
+                labelNota.Visible = false;
+                nomeProduto.Enabled = true;
+                valorProduto.Enabled = true;
+                enter.Enabled = true;
+                finalizar.Enabled = true;
+                fechaCaixa.Enabled = false;
+            }
+
         }
 
         private void finalizar_Click(object sender, EventArgs e)
@@ -253,14 +272,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
                 pagoCliente.Clear();
                 if (vPago < totalPedido)
                 {
-                    MessageBox.Show("ATENÇÃO: Valor pago é insuficiente");
-                }
-                else if (troco > valorTotal)
-                {
-                    MessageBox.Show("ATENÇÃO: Não há troco disponível no caixa. " +
-                        "Informe o cliente e, se necessário, feche o caixa");
-                    pagoCliente.Enabled = true;
-                    pago.Enabled = true;
+                    MessageBox.Show("ATENÇÃO: Valor pago é insuficiente ou inválido.");
                 }
                 else
                 {
@@ -315,6 +327,7 @@ namespace Sistema_de_Caixa_Simplificado_para_Lanchonete
             string inicio = String.Format("VALOR DE CAIXA INICIAL: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, tamanhoI), valorInicial);
             string total = String.Format("VALOR DE CAIXA ATUAL: {0} {1}" + Environment.NewLine, divisaoLista.Substring(0, tamanho), valorTotalFormat);
 
+            notaFiscal.Clear();
             valorCaixa.Clear();
             nomeProduto.Enabled = valorProduto.Enabled = um.Enabled = dois.Enabled = tres.Enabled = false;
             quatro.Enabled = cinco.Enabled = seis.Enabled = sete.Enabled = oito.Enabled = false;
